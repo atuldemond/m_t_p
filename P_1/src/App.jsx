@@ -9,7 +9,8 @@ function App() {
       <Nav />
     </>
   );
-  //!this is checking something
 }
 
 export default App;
+
+//! this commnet
