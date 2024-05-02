@@ -12,7 +12,7 @@ const Context = (props) => {
   const finaldata = async () => {
     try {
       const { data } = await axios("/products");
-      console.log(data);
+      // console.log(data);
       setproduct(data);
     } catch (error) {
       console.log(data);

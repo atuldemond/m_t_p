@@ -5,15 +5,15 @@ import Loading from "./Loading";
 
 const Cards = () => {
   const [products] = useContext(UserDetail);
-  console.log(products);
+  // console.log(products);
 
   return products ? (
     <div className="w-[80vw] h-full m-auto  flex flex-wrap  gap-7 justify-center items-center  py-10 px-10 bg-black ">
       {products.map((v, i) => (
-        <div className="cards rounded-xl hover:scale-110 ease-out duration-75 mt-4  bg-white w-[15vw] h-[60vh] flex flex-col justify-center items-center gap-2  px-2 ">
+        <div key={v.id} className="cards rounded-xl hover:scale-110 ease-out duration-75 mt-4  bg-white w-[15vw] h-[60vh] flex flex-col justify-center items-center gap-2  px-2 ">
           <div className="image  ">
             <img
-              className="w-[12vw] h-[20vh] object-fit bg-no-repeat hover:scale-110 ease-out duration-75 "
+              className="w-[12vw] h-[18vh] object-fit bg-no-repeat hover:scale-110 ease-out duration-75 "
               src={v.image}
               alt=""
             />
