@@ -8,7 +8,8 @@ const Category = () => {
   const [category, setcategory] = useState(null);
 
   const filteritems = async () => {
-    const single_category = await [
+    const single_category = [
+      "All",
       ...new Set(products.map((val) => val.category)),
     ];
     setcategory(single_category);
@@ -30,7 +31,7 @@ const Category = () => {
             <span className=" w-[15px] h-[15px] bg-red-300 rounded-r"></span>
             <h1>{value}</h1>
           </div>
-        ))}
+        ))} 
       </div>
 
       <div className="items w-[80%] bg-black flex flex-wrap gap-4 justify-between  items-center px-10 py-10 ">
