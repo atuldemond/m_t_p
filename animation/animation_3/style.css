@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 5vw;
+}
+button {
+  padding: 50px 100px;
+  background-color: transparent;
+  border: 5px solid cyan;
+  color: cyan;
+  font-size: larger;
+  position: relative;
+}
+
+button::after {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transition: all linear 0.5s;
+  z-index: 11;
+}
+
+button:hover::after {
+  width: 100%;
+}
