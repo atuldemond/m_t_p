@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100vw;
+}
+#main {
+  width: 100vw;
+
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  column-gap: 2vw;
+  row-gap: 2vw;
+}
+.one {
+  background-color: rgb(226, 133, 36);
+  margin: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.one:hover {
+  scale: 1.1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.one .logo {
+  font-size: 10vw;
+  margin: 2vw;
+}
+.one .title {
+  font-size: 8vw;
+  margin: 2vw;
+}
+.one .para {
+  text-align: justify;
+  font-size: 2vh;
+  margin: 2vw;
+}
+
+.one .btn {
+  font-size: 2vh;
+  margin: 2vw;
+  padding: 5vw;
+}
+.one .btn button {
+  padding: 3vw;
+}
+
+.two {
+  background-color: rgb(0, 104, 112);
+}
+.three {
+  background-color: rgb(0, 61, 60);
+}
